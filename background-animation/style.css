@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFF1E8; /* Color naranja claro */
+}
+
+.hero {
+    padding: 2em;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 4em; /* Tamaño de fuente más grande */
+    margin-bottom: 0.5em;
+    color: #D32F2F; /* Color rojo */
+    animation: fadeInUp 1s forwards; /* Animación de entrada */
+}
+
+.container {
+    background-color: #FFFFFF; /* Color blanco */
+    padding: 1em;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    animation: fadeIn 1s forwards; /* Animación de entrada para los botones */
+}
+
+.buttons button {
+    background-color: #D32F2F; /* Color rojo */
+    color: #FFFFFF; /* Color blanco */
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    border: none;
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    animation: fadeIn 1s forwards; /* Animación de entrada para los botones */
+}
+
+.buttons button:hover {
+    background-color: #FFFFFF; /* Color blanco */
+    color: #D32F2F; /* Color rojo */
+}
+
+#resultado {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #D32F2F; /* Color rojo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#apiExplanation {
+    margin-top: 1em;
+    font-size: 0.8em;
+    text-align: center;
+    color: #555555; /* Color gris oscuro */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

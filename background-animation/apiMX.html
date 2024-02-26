@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Turística de México</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero"> 
+        <div class="hero__title">Descubre México</div>
+        <div class="container">
+            <div class="buttons">
+                <button onclick="redirectTo('HttpRequest')">Mostrar información (HttpRequest)</button>
+                <button onclick="redirectTo('Fetch')">Mostrar información (Fetch)</button>
+                <button onclick="redirectTo('JQueryLocal')">Mostrar información (JQuery local)</button>
+                <button onclick="redirectTo('JQueryCDN')">Mostrar información (JQuery CDN)</button>
+              </div>
+              <div id="resultado"></div>
+              <div id="apiExplanation">La API proporciona información detallada sobre México, incluyendo su nombre oficial, capital, población, moneda, región, idiomas, husos horarios, área, países vecinos y más.</div>
+          </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="llamarapi2.js" defer></script>
+</body>
+</html>
